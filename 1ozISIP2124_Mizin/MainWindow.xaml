@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1ozISIP2124_Mizin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Первое графическое приложение мизин А.В." Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+        <Frame Name="MainFrame" Grid.Row="1" HorizontalContentAlignment="Center" Width="800" Height="344"/>
+        <Button Content="Назад" Background="Beige" HorizontalAlignment="Left" Height="40" Width="100" Foreground="Chocolate" FontSize="22" FontWeight="Bold" 
+                FontFamily="Book Antiqua" ToolTip="Кликните для возврата на предыдущую страницу" Margin="2,0,0,0" Name="Back" Grid.Row="0"/>
+        <Label Content="Разработчик: 1озИСИП-2124, Мизин Артем Владимирович" Grid.Row="2" FontWeight="Bold" FontFamily="Book Antiqua" FontSize="22" 
+               HorizontalAlignment="Center" Foreground="Chocolate"/>
     </Grid>
 </Window>
