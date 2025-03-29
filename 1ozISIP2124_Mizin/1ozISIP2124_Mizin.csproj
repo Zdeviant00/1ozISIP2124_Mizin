@@ -81,10 +81,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\User_managment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\Str2.xaml.cs">
       <DependentUpon>Str2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User_managment.xaml.cs">
+      <DependentUpon>User_managment.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
