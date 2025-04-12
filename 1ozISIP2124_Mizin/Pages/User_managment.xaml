@@ -33,12 +33,13 @@
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Управление пользователями" Grid.Row="0" Grid.Column="2"  FontSize="22" Foreground="Black" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
-        <Button Content="+ Добавление нового" Grid.Row="1" Grid.Column="1" Height="40" Width="100" Foreground="Black" Background="GhostWhite" HorizontalAlignment="Left"/>
+        <Label Content="Управление пользователями" Grid.Row="0" Grid.Column="2"  FontSize="20" Foreground="Black" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
+        <Button Content="+ Добавление нового" Grid.Row="1" Grid.Column="1" Height="40" Width="150" Foreground="Black" Background="GhostWhite" HorizontalAlignment="Left"/>
         <Label Content="Фильтр по ролям:" Foreground="DimGray" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right" />
         <Label Content="Сортировать по:" Foreground="DimGray" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Right" />
         <Label Content="Поиск:" Foreground="DimGray" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" />
         <Button Content="Обновить"  Height="40" Width="100" Foreground="Black" Background="GhostWhite" Grid.Row="4" Grid.Column="4" VerticalAlignment="Top" />
         <Label Content="Всего пользователей" Grid.Row="4" Grid.Column="1" Foreground="Black" VerticalAlignment="Bottom"/>
+        <ComboBox Name="RoleFilter" Grid.Column="4" Grid.Row="1"/>
     </Grid>
 </Page>
