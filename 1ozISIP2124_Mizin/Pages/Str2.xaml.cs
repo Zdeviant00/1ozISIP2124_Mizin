@@ -24,5 +24,10 @@ namespace _1ozISIP2124_Mizin.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnCncl_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Str1());
+        }
     }
 }

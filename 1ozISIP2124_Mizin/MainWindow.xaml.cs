@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1ozISIP2124_Mizin.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,22 @@ namespace _1ozISIP2124_Mizin
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack) MainFrame.GoBack();
+        }
+
+        private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"ProjectByMizin - {page.Title}";
+
+            if (page is Str1)
+                Back.Visibility = Visibility.Hidden;
+            else
+                Back.Visibility = Visibility.Visible;
         }
     }
 }

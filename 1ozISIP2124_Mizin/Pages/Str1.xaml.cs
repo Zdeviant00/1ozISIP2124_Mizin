@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1ozISIP2124_Mizin.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace _1ozISIP2124_Mizin
         public Str1()
         {
             InitializeComponent();
+        }
+
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Str2());
         }
     }
 }

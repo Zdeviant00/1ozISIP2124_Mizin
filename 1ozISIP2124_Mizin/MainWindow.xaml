@@ -12,9 +12,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="45"/>
         </Grid.RowDefinitions>
-        <Frame Name="MainFrame" Source="Pages/Str1.xaml" Grid.Row="1" HorizontalContentAlignment="Center" Width="800" Height="344"/>
+        <Frame x:Name="MainFrame" Source="Pages/Str1.xaml" Navigated="MainFrame_OnNavigated"
+               Grid.Row="1" HorizontalContentAlignment="Center" Width="800" Height="344"/>
         <Button Content="Назад" Background="Beige" HorizontalAlignment="Left" Height="40" Width="100" Foreground="Black" FontSize="22" FontWeight="Bold" 
-                FontFamily="Book Antiqua" ToolTip="Кликните для возврата на предыдущую страницу" Margin="2,0,0,0" Name="Back" Grid.Row="0"/>
+                FontFamily="Book Antiqua" ToolTip="Кликните для возврата на предыдущую страницу" Margin="2,0,0,0" Name="Back" Grid.Row="0" Click="Back_Click"/>
         <Label Content="Разработчик: 1озИСИП-2124, Мизин Артем Владимирович" Grid.Row="2" FontWeight="Bold" FontFamily="Book Antiqua" FontSize="22" 
                HorizontalAlignment="Center" Foreground="Black"/>
     </Grid>

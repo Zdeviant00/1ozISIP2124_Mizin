@@ -5,17 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:_1ozISIP2124_Mizin.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="360" d:DesignWidth="800"
       Title="Регистрация" Background="LemonChiffon">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -37,6 +38,41 @@
         <Label Content="Введите ФИО" Grid.Column="0" Grid.Row="4"
                HorizontalAlignment="Center" VerticalAlignment="Center"
                FontFamily="Book Antiqua" FontSize="22"/>
-
+        <Button Name="BtnCncl" Content="Отмена" Grid.Column="0" Grid.Row="5" Height="50" Width="190"
+                ToolTip="Нажмите для отмены регистрации"
+                FontFamily="Book Antiqua" FontSize="22" Background="PaleVioletRed" Click="BtnCncl_Click"/>
+        <Button Name="BtnRegFinal" Content="Регистрация" Grid.Column="1" Grid.Row="5" Height="50" Width="190"
+                ToolTip="Нажмите для подтверждения регистрации"
+                FontFamily="Book Antiqua" FontSize="22" Background="PaleVioletRed"/>
+        <TextBox x:Name="TxtBxLog" Grid.Column="1" Grid.Row="0" Height="50" Width="195"
+                 FontFamily="Book Antiqua" FontSize="22" Background="Transparent"
+                 ToolTip="Введите логин"/>
+        <TextBlock Text="Логин или почта" Name="txtHintLoginReg" Grid.Column="1" Grid.Row="0" 
+           HorizontalAlignment="Center" VerticalAlignment="Center"
+           FontFamily="Book Antiqua" FontSize="22" Foreground="Gray" Background="Transparent"/>
+        <PasswordBox x:Name="PassBxReg" Grid.Column="1" Grid.Row="1" Height="50" Width="195"
+              FontFamily="Book Antiqua" FontSize="22" Background="Transparent"
+              ToolTip="Введите пароль"/>
+        <TextBlock Text="Пароль" Name="txtHintPassReg" Grid.Column="1" Grid.Row="1" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontFamily="Book Antiqua" FontSize="22" Foreground="Gray" Background="Transparent"/>
+        <PasswordBox x:Name="PassBxRegProve" Grid.Column="1" Grid.Row="2" Height="50" Width="195"
+              FontFamily="Book Antiqua" FontSize="22" Background="Transparent"
+              ToolTip="Подтвердите пароль"/>
+        <TextBlock Text="Повторите пароль" Name="txtHintPassRegProve" Grid.Column="1" Grid.Row="2" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontFamily="Book Antiqua" FontSize="22" Foreground="Gray" Background="Transparent"/>
+        <ComboBox x:Name="RoleChoose" Grid.Column="1" Grid.Row="3" Height="50" Width="195"
+                  FontFamily="Book Antiqua" FontSize="22"
+                  SelectedIndex="1">
+            <ComboBoxItem>Администратор</ComboBoxItem>
+            <ComboBoxItem>Пользователь</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="TxtBxName" Grid.Column="1" Grid.Row="4" Height="50" Width="195"
+                 FontFamily="Book Antiqua" FontSize="22" Background="Transparent"
+                 ToolTip="Введите ФИО"/>
+        <TextBlock Text="ФИО" Name="txtHintNameRegProve" Grid.Column="1" Grid.Row="4" 
+           HorizontalAlignment="Center" VerticalAlignment="Center"
+           FontFamily="Book Antiqua" FontSize="22" Foreground="Gray" Background="Transparent"/>
     </Grid>
 </Page>
