@@ -6,9 +6,37 @@
       xmlns:local="clr-namespace:_1ozISIP2124_Mizin.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Моя вторая страница">
+      Title="Регистрация" Background="LemonChiffon">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+        <Label Content="Введите логин"  Grid.Column="0" Grid.Row="0"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontFamily="Book Antiqua" FontSize="22"/>
+        <Label Content="Введите пароль" Grid.Column="0" Grid.Row="1"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontFamily="Book Antiqua" FontSize="22"/>
+        <Label Content="Подтвердите пароль" Grid.Column="0" Grid.Row="2"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontFamily="Book Antiqua" FontSize="22"/>
+        <Label Content="Выберите роль" Grid.Column="0" Grid.Row="3"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontFamily="Book Antiqua" FontSize="22"/>
+        <Label Content="Введите ФИО" Grid.Column="0" Grid.Row="4"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontFamily="Book Antiqua" FontSize="22"/>
+
     </Grid>
 </Page>
